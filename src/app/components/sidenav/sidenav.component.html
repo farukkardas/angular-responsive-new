@@ -1,0 +1,14 @@
+<mat-drawer-container [hasBackdrop]="true" autosize class="example-container">
+  <mat-drawer #drawer mode="side">
+    <ul *ngFor="let element of data" class="list-group list-group-flush">
+      <li class="list-group-item p-2 mt-2" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" [routerLink]="element.routerLink"  (click)="changeRoute(element.routerLink)">
+        <i class="fa-brands fa-creative-commons-sampling logo" style="padding-right: 10px;"></i>
+        <a (click)="changeRoute(element.routerLink)">
+          {{element.name | titlecase}}
+        </a>
+      </li>
+    </ul>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+  </div>
+</mat-drawer-container>

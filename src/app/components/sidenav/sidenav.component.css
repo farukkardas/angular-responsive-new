@@ -1,0 +1,27 @@
+mat-drawer {
+    width: 200px;
+    z-index: 1;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    border-radius: 1ch;
+    padding-top: 100px;
+}
+
+.list-group-item {
+    height: 50px;
+    align-items: center;
+    display: flex;
+  
+}
+
+a {
+    font-family: roboto-flex;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,444 @@
+<!-- <mat-sidenav-container>
+    <div class="footer" #footer>
+        <div class="container">
+            <div *ngIf="!isMobile && !isTablet" class="row justify-content-center">
+                <div class="col-lg-2 col-sm-2 col-md-6">
+                    <h2 class="footer-title">Shop and Learn</h2>
+                    <ul>
+                        <li *ngFor="let data of firstFooterData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-sm-6  col-md-6">
+                    <h2 class="footer-title">Services</h2>
+                    <ul>
+                        <li *ngFor="let data of secondFooterData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 col-md-6">
+                    <h2 class="footer-title">Apple Store</h2>
+                    <ul>
+                        <li *ngFor="let data of thirdFooterData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6  col-md-6">
+                    <h2 class="footer-title">For Business</h2>
+                    <ul>
+                        <li *ngFor="let data of fourthData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-title">For Education</h2>
+                    <ul>
+                        <li *ngFor="let data of fifthData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-title">For Healthcare</h2>
+                    <ul>
+                        <li *ngFor="let data of sixthData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-title">For Government</h2>
+                    <ul>
+                        <li *ngFor="let data of seventhData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2 col-sm-6 col-md-6">
+                    <h2 class="footer-title">Apple Values</h2>
+                    <ul>
+                        <li *ngFor="let data of eightData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-title">About Apple</h2>
+                    <ul>
+                        <li *ngFor="let data of ninthData">
+                            <a class="footer-link" href="#">{{data}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div *ngIf="isMobile || isTablet" class="row justify-content-center">
+            <div class="col-xs-12">
+                <mat-accordion>
+                    <mat-expansion-panel [ngClass]="{'active-accordion': accordionState == true }" (opened)="accordionState = true" (closed)="accordionState = false"
+                        hideToggle="true" class="mat-elevation-z0">
+                        <mat-expansion-panel-header style="background-color: rgba(196, 25, 25, 0);">
+                            <mat-panel-title>
+                                Shop and Learn
+                            </mat-panel-title>
+                            <mat-icon *ngIf="!accordionState">add</mat-icon>
+                            <mat-icon *ngIf="accordionState">close</mat-icon>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <ul>
+                            <li *ngFor="let data of firstFooterData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-divider></mat-divider>
+
+            </div>
+            <div class="pt-2 col-xs-12">
+                <mat-accordion>
+                    <mat-expansion-panel [ngClass]="{'active-accordion': accordionState2 == true }" (opened)="accordionState2 = true" (closed)="accordionState2 = false"
+                        hideToggle="true" class="mat-elevation-z0">
+                        <mat-expansion-panel-header style="background-color: rgba(196, 25, 25, 0);">
+                            <mat-panel-title>
+                                Services
+                            </mat-panel-title>
+                            <mat-icon *ngIf="!accordionState2">add</mat-icon>
+                            <mat-icon *ngIf="accordionState2">close</mat-icon>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <ul>
+                            <li *ngFor="let data of secondFooterData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-divider></mat-divider>
+
+            </div>
+
+            <div class="pt-2 col-xs-12">
+                <mat-accordion>
+                    <mat-expansion-panel [ngClass]="{'active-accordion': accordionState3 == true }" (opened)="accordionState3 = true" (closed)="accordionState3 = false"
+                        hideToggle="true" class="mat-elevation-z0">
+                        <mat-expansion-panel-header style="background-color: rgba(196, 25, 25, 0);">
+                            <mat-panel-title>
+                                Apple Store
+                            </mat-panel-title>
+                            <mat-icon *ngIf="!accordionState3">add</mat-icon>
+                            <mat-icon *ngIf="accordionState3">close</mat-icon>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <ul>
+                            <li *ngFor="let data of thirdFooterData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-divider></mat-divider>
+
+            </div>
+
+            <div class="pt-2 col-xs-12">
+                <mat-accordion>
+                    <mat-expansion-panel [ngClass]="{'active-accordion': accordionState4 == true }" (opened)="accordionState4 = true" (closed)="accordionState4 = false"
+                        hideToggle="true" class="mat-elevation-z0">
+                        <mat-expansion-panel-header style="background-color: rgba(196, 25, 25, 0);">
+                            <mat-panel-title>
+                                For Business
+                            </mat-panel-title>
+                            <mat-icon *ngIf="!accordionState4">add</mat-icon>
+                            <mat-icon *ngIf="accordionState4">close</mat-icon>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <ul>
+                            <li *ngFor="let data of fourthData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                        <h2 class="footer-title">For Education</h2>
+                        <ul>
+                            <li *ngFor="let data of fifthData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                        <h2 class="footer-title">For Healthcare</h2>
+                        <ul>
+                            <li *ngFor="let data of sixthData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                        <h2 class="footer-title">For Government</h2>
+                        <ul>
+                            <li *ngFor="let data of seventhData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+    
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-divider></mat-divider>
+
+            </div>
+
+            <div class="pt-2 col-xs-12">
+                <mat-accordion>
+                    <mat-expansion-panel [ngClass]="{'active-accordion': accordionState5 == true }" (opened)="accordionState5 = true" (closed)="accordionState5 = false"
+                        hideToggle="true" class="mat-elevation-z0">
+                        <mat-expansion-panel-header style="background-color: rgba(196, 25, 25, 0);">
+                            <mat-panel-title>
+                                Apple Values
+                            </mat-panel-title>
+                            <mat-icon *ngIf="!accordionState5">add</mat-icon>
+                            <mat-icon *ngIf="accordionState5">close</mat-icon>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <ul>
+                            <li *ngFor="let data of eightData">
+                                <a class="footer-link" href="#">{{data}}</a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mb-3">
+            <mat-divider class="divider"></mat-divider>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-12 col-md-4">
+                <p class="footer-p">
+                    Copyright © 2022 Flowtone Inc. All rights reserved.
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <a href="#" class="footer-p">
+                    Privacy Policy
+                </a>
+                <a href="#" class="footer-p">
+                    Terms of Use
+                </a>
+                <a href="#" class="footer-p">
+                    Sales and Refunds
+                </a>
+                <a href="#" class="footer-p">
+                    Legal
+                </a>
+                <a href="#" class="footer-p">
+                    Site Map
+                </a>
+            </div>
+            <div class="col-lg-2 col-sm-12 col-md-4">
+                <a href="#" class="footer-p">
+                    {{currentLocation}}
+                </a>
+            </div>
+        </div>
+    </div>
+</mat-sidenav-container> -->
+
+<mat-sidenav-container  [ngStyle]="{'padding-left' : isMobile ? '15px' : '60px'}">
+    <div class="container">
+        <div class="row mt-2" >
+            <div class="col-lg-2" [ngStyle]="{'text-align' : isMobile || isTablet ? 'start' : 'center'}">
+                <img class="logo" routerLink="" style="cursor: pointer;" src="assets/img/beats-icon.png">
+            </div>
+            <div class="col-lg-3 pt-3">
+                <h2 class="title">Products</h2>
+                <ul>
+                    <li>
+                        <a>
+                            VIEW ALL
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            SPECIAL OFFERS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            BEATS FIT PRO
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            BEATS STUDIO BUDS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            BEATS FLEX
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            POWERBEATS PRO
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            BEATS SOLO<sup>3</sup> WIRELESS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            BEATS STUDIO<sup>3</sup> WIRELESS
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-2 pt-3">
+                <h2 class="title">Support</h2>
+                <ul>
+                    <li>
+                        <a>
+                            DOWNLOADS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            PRODUCT HELP
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            SERVICE & WARRANTY
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            REGISTER YOUR BEATS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            UPDATE YOUR BEATS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            AUTHORIZED RETAILERS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            CONTACT SUPPORT
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            INTERNATIONAL NUMBERS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 pt-3">
+                <h2 class="title">Company</h2>
+                <ul>
+                    <li>
+                        <a>
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            PRESS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            CAREERS
+                        </a>
+                    </li>
+
+                </ul>
+                <h2 class="title" style="margin-top:20px">Legal</h2>
+                <ul>
+                    <li>
+                        <a>
+                            TERMS OF USE
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            PRIVACY
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            TRADEMARK
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            PROMOTION TERMS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 pt-3">
+                <h2 class="title">Follow Us</h2>
+                <ul class="social-media">
+                    <li>
+                        <a>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <h2 class="title">Location</h2>
+                <ul>
+                    <li>
+                        <a>
+                           {{currentLocation | uppercase}} | CHANGE
+                        </a>
+                    </li>
+
+                </ul>
+                <h2 class="title"><i class="fa-regular fa-envelope"></i> Email</h2>
+                <ul>
+                    <li>
+                        <a>
+                            SIGN UP
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div  class="row copyright mt-5 p-5">
+            <div [ngStyle]="{'text-align' : isMobile ? 'start' : 'center'}" class="col-lg-12 col-sm-12">
+                <p>Copyright © 2022 Apple Inc. - All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</mat-sidenav-container>

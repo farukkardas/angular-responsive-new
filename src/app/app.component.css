@@ -1,0 +1,11 @@
+.body {
+    min-height: calc(100vh);
+ height: auto;
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+    word-wrap: break-word;
+}
+

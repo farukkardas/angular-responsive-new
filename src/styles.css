@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: udp-regular;
+  src: url(assets/fonts/BIZUDP-Gothic.ttf);
+}
+
+@font-face {
+  font-family: roboto-flex;
+  src: url(assets/fonts/RobotoFlex-Regular.ttf);
+}
+
+@font-face {
+  font-family: cairo;
+  src: url(assets/fonts/Cairo.ttf);
+}
+
+@font-face {
+  font-family: neze-grotes;
+  src: url(assets/fonts/NeuzeitGrotesk.otf);
+}
+
+@font-face {
+  font-family: abeat-by-kai;
+  src: url(assets/fonts/abeatbyKaiRegular.otf);
+}
+
+@font-face {
+  font-family: alternate-gothic;
+  src: url(assets/fonts/AlternateGothicNo2.ttf);
+}
+
+@font-face {
+  font-family: avant-grande;
+  src: url(assets/fonts/AvantGrandeBold.otf);
+}
+
+@font-face {
+  font-family: harmonia-sans;
+  src: url(assets/fonts/HarmoniaSansProCyr-Regular.ttf);
+}
+
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.toastr-title {
+  font-family: harmonia-sans;
+  font-weight: 600;
+  font-size: 15px;
+
+}
+
+.toastr-message {
+  font-family: harmonia-sans;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.toast-class.toast-success {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  font-family: harmonia-sans;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px;
+  background: url("assets/img/toastr-success.png") center center;
+
+}
+
+
+.animated {
+  visibility: visible !important;
+}
+
+.hide-on-init {
+  visibility: hidden;
+}

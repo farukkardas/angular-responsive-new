@@ -1,0 +1,160 @@
+mat-sidenav-container {
+    height: auto;
+    z-index: 0;
+    margin-top: 50px;
+    padding-left: 60px;
+    background-color: rgb(255, 255, 255);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.logo {
+    width: 42px;
+    height: auto;
+}
+
+.title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: harmonia-sans;
+    font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    line-height: 1.1 !important;
+    padding-top: 0 !important;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul li {
+    padding-top: 10px;
+
+}
+
+li a {
+    font-family: alternate-gothic;
+    font-size: 1.2rem;
+    color: #7e7c75;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media li a i {
+    font-size: 24px;
+    padding: 10px;
+    padding-left: 3px;
+}
+
+.social-media li a:hover {
+    border-bottom: 0px;
+}
+
+.copyright {
+    margin: 0;
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    color: #7e7c75;
+    font-family: harmonia-sans;
+}
+
+li a:hover {
+    border-bottom: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-family: udp-regular;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+a:hover {
+    text-decoration: underline;
+
+    color: rgb(53, 53, 53);
+}
+
+.divider {
+    width: 50%;
+}
+
+.footer-p {
+    color: gray;
+    height: auto;
+    font-size: 13px;
+   padding-right: 5px;
+}
+
+.footer-link {
+    font-size: 13px;
+    padding: 0px;
+}
+
+
+
+.footer-title {
+    margin-left: 25px;
+    font-family: roboto-flex;
+    font-size: 15px;
+}
+
+.active-accordion{
+    background-color: rgba(211, 209, 209, 0.507);
+}
+
+h2{
+    white-space: nowrap;
+}
+
+
+mat-icon {
+    color: rgba(126, 126, 126, 0.993);
+}
+
+mat-panel-title{
+    font-family: roboto-flex;
+    font-size: 14px;
+}
+
+mat-accordion {
+    background-color: rgba(196, 25, 25, 0);
+}
+
+mat-expansion-panel {
+    background-color: rgba(190, 3, 3, 0);
+  
+}
+
+mat-expansion-panel li a {
+ justify-content: flex-start    ;
+} */

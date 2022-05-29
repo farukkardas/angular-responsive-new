@@ -1,0 +1,26 @@
+<mat-toolbar [ngClass]="isMobile ? 'mat-toolbar-sm' : 'mat-toolbar-lg'">
+    <mat-toolbar-row fxLayout="row"
+        [fxLayoutAlign]="isTablet || isMobile ? 'space-between center' : 'space-around center'">
+        <div fxLayout="row inline" class="top-left">
+            <div>
+                <a routerLink="">
+                    <img class="logo" src="/assets/img/beats-icon.png">
+                </a>
+            </div>
+        </div>
+        <div class="p-5" *ngIf="!isMobile">
+            <div fxLayout="row inline" *ngFor="let data of routes">
+                <button [routerLink]="data.routerLink" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}" [routerLink]="data.routerLink"
+                    class="menu-button">
+                    {{data.name |uppercase}}
+                </button>
+            </div>
+        </div>
+        <button *ngIf="isMobile" [ngClass]="isMobile ? 'toggle-button-sm' : 'toggle-button'" mat-button (click)="toggleSidenav()"><i *ngIf="!isOpened"
+                class="fa-solid fa-bars"></i><i *ngIf="isOpened" class="fa-solid fa-xmark"></i></button>
+    </mat-toolbar-row>
+    <!-- <mat-toolbar-row style="margin-top: 15px;" *ngIf="!isMobile" fxLayout="row" fxLayoutAlign="center center">
+        <h2 class="router-name">{{activeRoute | titlecase}}</h2>
+    </mat-toolbar-row> -->
+</mat-toolbar>

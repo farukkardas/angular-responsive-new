@@ -1,0 +1,119 @@
+.mat-toolbar-lg {
+    height: 100px;
+    position: static;
+    background: rgb(255, 255, 255);
+    background-position: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;    
+}
+.mat-toolbar-sm {
+    height: 60px;
+    position: static;
+    background: rgb(255, 255, 255);
+
+}
+
+
+.top-left {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.router-name{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-right: 30px;
+    font-family: cairo;
+}
+
+.logo {
+    display: block;
+    height: 40px;
+    max-width: 100%;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.top-left {
+    padding-top: 2px;
+    display: inline;
+}
+
+.top-left :active {
+    cursor: pointer;
+}
+
+.top-left a {
+    text-decoration: none;
+}
+
+.mat-icon-no-color :hover {
+    color: blue;
+}
+
+.fa-solid {
+    padding-right: 3px;
+    padding-bottom: 3px;
+
+}
+
+.app-name {
+    color: rgb(0, 0, 0);
+    font-family: udp-regular;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.menu-button {
+    border: 0px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    background-color: #fff;
+    margin-right: 3px;
+    font-family: cairo;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: sub;
+    font-weight: 400;
+}
+
+button:hover{
+   border-bottom: 1px solid rgb(138, 138, 138);
+   
+}
+
+
+
+.active {
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+
+
+.toggle-button {
+    background-color: rgb(0, 0, 0);
+}
+
+.toggle-button-sm {
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+.fa-bars,.fa-xmark {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+
+}
